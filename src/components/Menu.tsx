@@ -1,8 +1,10 @@
 "use client";
 
+import { url } from "inspector";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import { title } from "process";
+import { useState } from "react";
 import CartIcon from "./CartIcon";
 
 const links = [
@@ -44,7 +46,7 @@ const Menu = () => {
               {item.title}
             </Link>
           ))}
-          {!user ? (
+          {user ? (
             <Link href="/login" onClick={() => setOpen(false)}>
               Login
             </Link>
