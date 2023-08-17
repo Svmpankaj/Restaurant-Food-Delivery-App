@@ -3,7 +3,7 @@ import React from "react";
 
 const Slider = () => {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-[calc(100vh-6rem)]">
       {/* TEXT CONTAINER  */}
       <div className="h-1/2">
         <h1>Test</h1>
