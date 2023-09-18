@@ -3,7 +3,25 @@ import React from "react";
 const OrdersPage = () => {
   return (
     <div className="p-4 lg:px-20 xl:px-40">
-      <table className=""></table>
+      <table className="w-full">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Date</th>
+            <th>Price</th>
+            <th>Products</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1237861238721</td>
+            <td>19.10.2023</td>
+            <td>Big Burger Menu (2), Veggie Pizza (2), Coca Cola 1L (2)</td>
+            <td>On the way (approx. 10min)...</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };
